@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Blackjack</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <header class="title">
+    <div class="row">
+      <div class="col">
+        21 Blackjack
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <small>Gana el primero que llega a 21</small>
+      </div>
+    </div>
+  </header>
+
+  <div class="row mt-2">
+    <div id="div-buttons" class="col text-center">
+      <button id="btnNew" class="btn btn-danger">New Game</button>
+      <button id="btnGet" class="btn btn-primary">Get card</button>
+      <button id="btnStop" class="btn btn-primary">Stop</button>
+    </div>
+  </div>
+
+  <div class="row container">
+    <div class="col">
+      <h1>Jugador 1 - <small>0</small></h1>
+      <div id="card-player">
+      </div>
+    </div>
+  </div>
+
+  <div class="row container mt-2">
+    <div class="col">
+      <h1>Terminator - <small>0</small></h1>
+      <div id="card-terminator">
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/underscore-min.js"></script>
+  <script src="assets/js/game.js"></script>
+</body>
+</html>
